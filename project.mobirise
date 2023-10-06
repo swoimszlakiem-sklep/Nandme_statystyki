@@ -1,0 +1,484 @@
+{
+  "settings": {
+    "name": "Site-09-21_0221",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise5",
+      "title": "Mobirise 5",
+      "titlePreset": "Mobirise 5",
+      "styling": {
+        "primaryColor": "#6592e6",
+        "secondaryColor": "#ff6666",
+        "successColor": "#40b0bf",
+        "infoColor": "#47b5ed",
+        "warningColor": "#FFE161",
+        "dangerColor": "#ff9966",
+        "mainFont": "Jost",
+        "display1Font": "Jost",
+        "display1Size": 4.6,
+        "display2Font": "Jost",
+        "display2Size": 3,
+        "display5Font": "Jost",
+        "display5Size": 2,
+        "display7Font": "Jost",
+        "display7Size": 1.2,
+        "display4Font": "Jost",
+        "display4Size": 1.1,
+        "isRoundedButtons": false,
+        "isGhostButtonBorder": false,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.7.12",
+    "siteFonts": [
+      {
+        "css": "'Jost', sans-serif",
+        "name": "Jost",
+        "url": "https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "imageResize": true,
+    "uniqCompNum": 3,
+    "versionPublish": "5.7.12",
+    "screenshot": "screenshot.png",
+    "publishChangesOnly": true
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_name": "afeatures5",
+          "_sourceTheme": "expertm5",
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".container": {
+              "padding-left": "60px",
+              "padding-right": "60px",
+              "@media (max-width: 1599px)": {
+                "padding-left": "15px",
+                "padding-right": "15px"
+              }
+            },
+            ".row": {
+              "margin-left": "-60px",
+              "margin-right": "-60px",
+              "justify-content": "flex-start",
+              "> [class*=\"col\"]": {
+                "padding-left": "60px",
+                "padding-right": "60px"
+              },
+              "@media (max-width: 1599px)": {
+                "margin-left": "-15px",
+                "margin-right": "-15px",
+                "> [class*=\"col\"]": {
+                  "padding-left": "15px",
+                  "padding-right": "15px"
+                }
+              },
+              "& when (@reverseContent)": {
+                "flex-direction": "row-reverse"
+              },
+              "@media (max-width: 991px)": {
+                "flex-wrap": "wrap"
+              }
+            },
+            ".mbr-section-head": {
+              "width": "100%"
+            },
+            ".mbr-section-title": {
+              "color": "#000000"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#C4CFDE",
+              "opacity": "0.75",
+              "margin-top": "16px"
+            },
+            ".mbr-section-btn": {
+              "margin-top": "40px"
+            },
+            ".lines-container": {
+              "width": "100%",
+              "& when (@reverseContent)": {
+                "padding-right": "10%"
+              },
+              "& when not (@reverseContent)": {
+                "padding-left": "10%"
+              },
+              "@media (max-width: 991px)": {
+                "padding": "0",
+                "margin-top": "40px"
+              }
+            },
+            ".lines-title": {
+              "color": "#000000",
+              "margin-bottom": "34px",
+              "text-align": "center"
+            },
+            ".lines-wrap": {
+              "width": "100%"
+            },
+            ".line-item-container": {
+              "width": "100%",
+              "&:not(:first-child)": {
+                "margin-top": "40px"
+              }
+            },
+            ".line-text": {
+              "color": "#000000",
+              "opacity": "0.75",
+              "margin-bottom": "10px"
+            },
+            ".line-item": {
+              "width": "100%",
+              "height": "60px",
+              "padding": "5px",
+              "background-color": "@linesBg",
+              "border-radius": "500px",
+              "overflow": "hidden",
+              "box-shadow": "inset 8px 8px 16px rgba(0, 0, 0, 0.46), inset -8px -8px 16px rgba(56, 62, 69, 0.46)"
+            },
+            ".line-item-active": {
+              "height": "100%",
+              "border-radius": "500px",
+              "transition": "width .6s ease",
+              "background": "linear-gradient(145deg, @linesBg1 0%, @linesBg2 100%)"
+            },
+            ".line-item-active-1": {
+              "width": "(@lineActive1 * 1%)"
+            },
+            ".line-item-active-2": {
+              "width": "(@lineActive2 * 1%)"
+            },
+            ".line-item-active-3": {
+              "width": "(@lineActive3 * 1%)"
+            },
+            ".mbr-section-subtitle, .mbr-section-btn": {
+              "color": "#000000"
+            }
+          },
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features5 expertm5\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\" checked>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showMainTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showMainSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <header>Lines</header>\n        <select title=\"Lines\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n        </select>\n        <input type=\"checkbox\" title=\"Lines Title\" name=\"showLinesTitle\" checked>\n        <input type=\"checkbox\" title=\"Lines Text\" name=\"showLinesText\" checked>\n        <input type=\"color\" title=\"Lines BG\" name=\"linesBg\" value=\"#212428\">\n        <input type=\"color\" title=\"Lines Active BG 1\" name=\"linesBg1\" value=\"#edb6c2\">\n        <input type=\"color\" title=\"Lines Active BG 2\" name=\"linesBg2\" value=\"#edb6c2\">\n        <input type=\"range\" inline title=\"Line Active 1\" name=\"lineActive1\" min=\"0\" max=\"100\" step=\"1\" value=\"100\">\n        <input type=\"range\" inline title=\"Line Active 2\" name=\"lineActive2\" min=\"0\" max=\"100\" step=\"1\" value=\"80\" condition=\"cardsAmount >1\">\n        <input type=\"range\" inline title=\"Line Active 3\" name=\"lineActive3\" min=\"0\" max=\"100\" step=\"1\" value=\"70\" condition=\"cardsAmount >2\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1-2.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#eccdf3\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1-2.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#212428\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12 col-lg-4\">\n                <div class=\"mbr-section-head\">\n                    <h3 class=\"mbr-section-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" mbr-if=\"showMainTitle\" data-app-selector=\".mbr-section-title\"><b>NANDME VX7000</b></h3>\n                    <h5 class=\"mbr-section-subtitle mbr-fonts-style mb-0\" mbr-theme-style=\"display-7\" mbr-if=\"showMainSubtitle\" data-app-selector=\".mbr-section-subtitle, .mbr-section-btn\">NX7000 to przed wszystkim dobry stosunek ceny do jakości. Wystarczy spojrzeć na pojemność baterii to aż 2600mAh co daje 365 dni pracy na jednym ładowaniu w trybie Sensitive. <br>To jedna z tych szczoteczek, która nie ma zaawansowanych funkcji monitorowania ale za to jest świetnie wyposażona a komfort mycia jest na zupełnie innym poziomie niż przy zwykłej szczoteczce elektrycznej.</h5>\n                    <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn custom-section-btn\" mbr-if=\"showButtons\"><a class=\"btn btn-black\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">WRÓĆ</a></div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-8\">\n                <div class=\"lines-container\">\n                    <p class=\"lines-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showLinesTitle\" data-app-selector=\".lines-title\"><b>Statystyki</b></p>\n                    <div class=\"lines-wrap\">\n                        <div class=\"line-item-container\">\n                            <p class=\"line-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showLinesText\" data-app-selector=\".line-text\">Wytrzymałość baterii (365dni)</p>\n                            <div class=\"line-item\">\n                                <div class=\"line-item-active line-item-active-1\"></div>\n                            </div>\n                        </div>\n                        <div class=\"line-item-container\" mbr-if=\"cardsAmount >1\">\n                            <p class=\"line-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showLinesText\" data-app-selector=\".line-text\">Czas ładowania (7-12 godzin)</p>\n                            <div class=\"line-item\">\n                                <div class=\"line-item-active line-item-active-2\"></div>\n                            </div>\n                        </div>\n                        <div class=\"line-item-container\" mbr-if=\"cardsAmount >2\">\n                            <p class=\"line-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showLinesText\" data-app-selector=\".line-text\">Cicha praca (68dB)</p>\n                            <div class=\"line-item\">\n                                <div class=\"line-item-active line-item-active-3\"></div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "afeatures5-0",
+          "_isUserblock": true,
+          "_cid": "tQrKtLkw2h",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_name": "afeatures5",
+          "_sourceTheme": "expertm5",
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".container": {
+              "padding-left": "60px",
+              "padding-right": "60px",
+              "@media (max-width: 1599px)": {
+                "padding-left": "15px",
+                "padding-right": "15px"
+              }
+            },
+            ".row": {
+              "margin-left": "-60px",
+              "margin-right": "-60px",
+              "justify-content": "flex-start",
+              "> [class*=\"col\"]": {
+                "padding-left": "60px",
+                "padding-right": "60px"
+              },
+              "@media (max-width: 1599px)": {
+                "margin-left": "-15px",
+                "margin-right": "-15px",
+                "> [class*=\"col\"]": {
+                  "padding-left": "15px",
+                  "padding-right": "15px"
+                }
+              },
+              "& when (@reverseContent)": {
+                "flex-direction": "row-reverse"
+              },
+              "@media (max-width: 991px)": {
+                "flex-wrap": "wrap"
+              }
+            },
+            ".mbr-section-head": {
+              "width": "100%"
+            },
+            ".mbr-section-title": {
+              "color": "#000000"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#C4CFDE",
+              "opacity": "0.75",
+              "margin-top": "16px"
+            },
+            ".mbr-section-btn": {
+              "margin-top": "40px"
+            },
+            ".lines-container": {
+              "width": "100%",
+              "& when (@reverseContent)": {
+                "padding-right": "10%"
+              },
+              "& when not (@reverseContent)": {
+                "padding-left": "10%"
+              },
+              "@media (max-width: 991px)": {
+                "padding": "0",
+                "margin-top": "40px"
+              }
+            },
+            ".lines-title": {
+              "color": "#17003b",
+              "margin-bottom": "34px",
+              "text-align": "center"
+            },
+            ".lines-wrap": {
+              "width": "100%"
+            },
+            ".line-item-container": {
+              "width": "100%",
+              "&:not(:first-child)": {
+                "margin-top": "40px"
+              }
+            },
+            ".line-text": {
+              "color": "#17003b",
+              "opacity": "0.75",
+              "margin-bottom": "10px"
+            },
+            ".line-item": {
+              "width": "100%",
+              "height": "60px",
+              "padding": "5px",
+              "background-color": "@linesBg",
+              "border-radius": "500px",
+              "overflow": "hidden",
+              "box-shadow": "inset 8px 8px 16px rgba(0, 0, 0, 0.46), inset -8px -8px 16px rgba(56, 62, 69, 0.46)"
+            },
+            ".line-item-active": {
+              "height": "100%",
+              "border-radius": "500px",
+              "transition": "width .6s ease",
+              "background": "linear-gradient(145deg, @linesBg1 0%, @linesBg2 100%)"
+            },
+            ".line-item-active-1": {
+              "width": "(@lineActive1 * 1%)"
+            },
+            ".line-item-active-2": {
+              "width": "(@lineActive2 * 1%)"
+            },
+            ".line-item-active-3": {
+              "width": "(@lineActive3 * 1%)"
+            },
+            ".mbr-section-subtitle, .mbr-section-btn": {
+              "color": "#232323",
+              "text-align": "left"
+            }
+          },
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features5 expertm5\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\" checked>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showMainTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showMainSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <header>Lines</header>\n        <select title=\"Lines\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n        </select>\n        <input type=\"checkbox\" title=\"Lines Title\" name=\"showLinesTitle\" checked>\n        <input type=\"checkbox\" title=\"Lines Text\" name=\"showLinesText\" checked>\n        <input type=\"color\" title=\"Lines BG\" name=\"linesBg\" value=\"#ffffff\">\n        <input type=\"color\" title=\"Lines Active BG 1\" name=\"linesBg1\" value=\"#17003b\">\n        <input type=\"color\" title=\"Lines Active BG 2\" name=\"linesBg2\" value=\"#17003b\">\n        <input type=\"range\" inline title=\"Line Active 1\" name=\"lineActive1\" min=\"0\" max=\"100\" step=\"1\" value=\"76\">\n        <input type=\"range\" inline title=\"Line Active 2\" name=\"lineActive2\" min=\"0\" max=\"100\" step=\"1\" value=\"71\" condition=\"cardsAmount >1\">\n        <input type=\"range\" inline title=\"Line Active 3\" name=\"lineActive3\" min=\"0\" max=\"100\" step=\"1\" value=\"80\" condition=\"cardsAmount >2\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1-2.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1-2.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#212428\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12 col-lg-4\">\n                <div class=\"mbr-section-head\">\n                    <h3 class=\"mbr-section-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" mbr-if=\"showMainTitle\" data-app-selector=\".mbr-section-title\"><b>NANDME VX8000</b></h3>\n                    <h5 class=\"mbr-section-subtitle mbr-fonts-style mb-0\" mbr-theme-style=\"display-7\" mbr-if=\"showMainSubtitle\" data-app-selector=\".mbr-section-subtitle, .mbr-section-btn\">Ten model z rodziny szczoteczek NX odnajduje balans po między nienaganną estetyką, a dobrą funkcjonalnością. Jej bogaty zestaw końcówek oraz sensor zbyt mocnego nacisku gwarantują szybszą, efektywniejszą pracę. Jest to model stworzony dla osób, które chcą pozwolić sobie na trochę więcej z poziomu mocnej średniej półki. Wyposażona w świetne tryby pracy z dwoma pulsacyjnymi to dodatkowa zaleta.</h5>\n                    <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn custom-section-btn\" mbr-if=\"showButtons\"><a class=\"btn btn-black\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">WRÓĆ</a></div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-8\">\n                <div class=\"lines-container\">\n                    <p class=\"lines-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showLinesTitle\" data-app-selector=\".lines-title\"><b>Statystyki</b></p>\n                    <div class=\"lines-wrap\">\n                        <div class=\"line-item-container\">\n                            <p class=\"line-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showLinesText\" data-app-selector=\".line-text\">Wytrzymałość baterii (90dni)</p>\n                            <div class=\"line-item\">\n                                <div class=\"line-item-active line-item-active-1\"></div>\n                            </div>\n                        </div>\n                        <div class=\"line-item-container\" mbr-if=\"cardsAmount >1\">\n                            <p class=\"line-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showLinesText\" data-app-selector=\".line-text\">Czas ładowania (16-22dni)</p>\n                            <div class=\"line-item\">\n                                <div class=\"line-item-active line-item-active-2\"></div>\n                            </div>\n                        </div>\n                        <div class=\"line-item-container\" mbr-if=\"cardsAmount >2\">\n                            <p class=\"line-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showLinesText\" data-app-selector=\".line-text\">Cicha praca (57dB)</p>\n                            <div class=\"line-item\">\n                                <div class=\"line-item-active line-item-active-3\"></div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "afeatures5-1",
+          "_isUserblock": true,
+          "_cid": "tQrLb5J42q",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "_name": "afeatures5",
+          "_sourceTheme": "expertm5",
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".container": {
+              "padding-left": "60px",
+              "padding-right": "60px",
+              "@media (max-width: 1599px)": {
+                "padding-left": "15px",
+                "padding-right": "15px"
+              }
+            },
+            ".row": {
+              "margin-left": "-60px",
+              "margin-right": "-60px",
+              "justify-content": "flex-start",
+              "> [class*=\"col\"]": {
+                "padding-left": "60px",
+                "padding-right": "60px"
+              },
+              "@media (max-width: 1599px)": {
+                "margin-left": "-15px",
+                "margin-right": "-15px",
+                "> [class*=\"col\"]": {
+                  "padding-left": "15px",
+                  "padding-right": "15px"
+                }
+              },
+              "& when (@reverseContent)": {
+                "flex-direction": "row-reverse"
+              },
+              "@media (max-width: 991px)": {
+                "flex-wrap": "wrap"
+              }
+            },
+            ".mbr-section-head": {
+              "width": "100%"
+            },
+            ".mbr-section-title": {
+              "color": "#C4CFDE"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#C4CFDE",
+              "opacity": "0.75",
+              "margin-top": "16px"
+            },
+            ".mbr-section-btn": {
+              "margin-top": "40px"
+            },
+            ".lines-container": {
+              "width": "100%",
+              "& when (@reverseContent)": {
+                "padding-right": "10%"
+              },
+              "& when not (@reverseContent)": {
+                "padding-left": "10%"
+              },
+              "@media (max-width: 991px)": {
+                "padding": "0",
+                "margin-top": "40px"
+              }
+            },
+            ".lines-title": {
+              "color": "#C4CFDE",
+              "margin-bottom": "34px",
+              "text-align": "center"
+            },
+            ".lines-wrap": {
+              "width": "100%"
+            },
+            ".line-item-container": {
+              "width": "100%",
+              "&:not(:first-child)": {
+                "margin-top": "40px"
+              }
+            },
+            ".line-text": {
+              "color": "#C4CFDE",
+              "opacity": "0.75",
+              "margin-bottom": "10px"
+            },
+            ".line-item": {
+              "width": "100%",
+              "height": "60px",
+              "padding": "5px",
+              "background-color": "@linesBg",
+              "border-radius": "500px",
+              "overflow": "hidden",
+              "box-shadow": "inset 8px 8px 16px rgba(0, 0, 0, 0.46), inset -8px -8px 16px rgba(56, 62, 69, 0.46)"
+            },
+            ".line-item-active": {
+              "height": "100%",
+              "border-radius": "500px",
+              "transition": "width .6s ease",
+              "background": "linear-gradient(145deg, @linesBg1 0%, @linesBg2 100%)"
+            },
+            ".line-item-active-1": {
+              "width": "(@lineActive1 * 1%)"
+            },
+            ".line-item-active-2": {
+              "width": "(@lineActive2 * 1%)"
+            },
+            ".line-item-active-3": {
+              "width": "(@lineActive3 * 1%)"
+            }
+          },
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"features5 expertm5\" group=\"Features\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverseContent\" checked>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showMainTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showMainSubtitle\" checked>\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\" checked>\n        <header>Lines</header>\n        <select title=\"Lines\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\" selected>3</option>\n        </select>\n        <input type=\"checkbox\" title=\"Lines Title\" name=\"showLinesTitle\" checked>\n        <input type=\"checkbox\" title=\"Lines Text\" name=\"showLinesText\" checked>\n        <input type=\"color\" title=\"Lines BG\" name=\"linesBg\" value=\"#212428\">\n        <input type=\"color\" title=\"Lines Active BG 1\" name=\"linesBg1\" value=\"#d31a4c\">\n        <input type=\"color\" title=\"Lines Active BG 2\" name=\"linesBg2\" value=\"#d31a4c\">\n        <input type=\"range\" inline title=\"Line Active 1\" name=\"lineActive1\" min=\"0\" max=\"100\" step=\"1\" value=\"62\">\n        <input type=\"range\" inline title=\"Line Active 2\" name=\"lineActive2\" min=\"0\" max=\"100\" step=\"1\" value=\"100\" condition=\"cardsAmount >1\">\n        <input type=\"range\" inline title=\"Line Active 3\" name=\"lineActive3\" min=\"0\" max=\"100\" step=\"1\" value=\"100\" condition=\"cardsAmount >2\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/background1-2.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#000000\" selected>\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@PROJECT_PATH@/assets/images/background1-2.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#212428\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n    </div>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row\">\n            <div class=\"col-12 col-lg-4\">\n                <div class=\"mbr-section-head\">\n                    <h3 class=\"mbr-section-title mbr-fonts-style mb-0\" mbr-theme-style=\"display-5\" mbr-if=\"showMainTitle\" data-app-selector=\".mbr-section-title\"><b>NANDME VX9000</b></h3>\n                    <h5 class=\"mbr-section-subtitle mbr-fonts-style mb-0\" mbr-theme-style=\"display-7\" mbr-if=\"showMainSubtitle\" data-app-selector=\".mbr-section-subtitle, .mbr-section-btn\">Posiada za równo podstawowe użyteczne funkcje precyzyjnie dbając o higienę jamy ustnej jak i czujniki kontrolujące jej stan. Urządzenie Smart z ekranem LCD ofertuje dostęp do statystyk czy powiadomień. To szczoteczka dla profesjonalistów czarnych charakterów i osób ceniących każdy najmniejszy detal.</h5>\n                    <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn custom-section-btn\" mbr-if=\"showButtons\"><a class=\"btn btn-black\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">WRÓĆ</a></div>\n                </div>\n            </div>\n            <div class=\"col-12 col-lg-8\">\n                <div class=\"lines-container\">\n                    <p class=\"lines-title mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showLinesTitle\" data-app-selector=\".lines-title\"><b>Statystyki</b></p>\n                    <div class=\"lines-wrap\">\n                        <div class=\"line-item-container\">\n                            <p class=\"line-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showLinesText\" data-app-selector=\".line-text\">Wytrzymałość baterii (50dni)</p>\n                            <div class=\"line-item\">\n                                <div class=\"line-item-active line-item-active-1\"></div>\n                            </div>\n                        </div>\n                        <div class=\"line-item-container\" mbr-if=\"cardsAmount >1\">\n                            <p class=\"line-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showLinesText\" data-app-selector=\".line-text\">Czas ładowania (9 godzin)</p>\n                            <div class=\"line-item\">\n                                <div class=\"line-item-active line-item-active-2\"></div>\n                            </div>\n                        </div>\n                        <div class=\"line-item-container\" mbr-if=\"cardsAmount >2\">\n                            <p class=\"line-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showLinesText\" data-app-selector=\".line-text\">Cicha praca (&lt;45dB)</p>\n                            <div class=\"line-item\">\n                                <div class=\"line-item-active line-item-active-3\"></div>\n                            </div>\n                        </div>\n                    </div>\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_anchor": "afeatures5-2",
+          "_isUserblock": true,
+          "_cid": "tQrLKk9E6x",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
