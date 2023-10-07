@@ -53,8 +53,8 @@
     "sitemapSwitcher": false,
     "siteUrl": false,
     "sitemapSwitcherAuto": "on",
-    "favicon": false,
-    "mbrsiteDomain": "gs8sbtk4tu",
+    "favicon": "@PROJECT_PATH@/assets/images/swoim-szlakiem-128x128.png",
+    "mbrsiteDomain": "pzsyeh5gar",
     "cookiesAlert": false,
     "gdpr": false,
     "pwa-switcher": false,
@@ -66,8 +66,8 @@
     "index.html": {
       "settings": {
         "main": true,
-        "title": "Home",
-        "meta_descr": "",
+        "title": "Statystki dotyczące Nandme NX-7000,8000,9000",
+        "meta_descr": "Przydatne statystyki, które pomogą ci podjąć decyzję w zakupie szczoteczki sonicznej. Przejdź  i wybierz swój typ.",
         "header_custom": "",
         "footer_custom": "",
         "html_before": ""
